@@ -33,12 +33,28 @@
       font-size: 4vw;
     }
   }
+
+  .section-we-numbers {
+    .top-head {
+      .left-col {
+        .heading {
+          font-size: 3vw;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1400px) {
   section {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+
+  .section-we-numbers {
+    .grid-numbers {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }
 
@@ -65,10 +81,44 @@
       }
     }
   }
+
+  .section-we-numbers {
+    .top-head {
+      flex-direction: column;
+      align-items: inherit;
+      .left-col {
+        .heading {
+          font-size: 4vw;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1000px) {
+  .section-current-projects {
+    .slider-projects {
+      .item-project {
+        grid-template-columns: 1fr;
 
+        .info-container {
+          margin-top: 0;
+          padding: 20px;
+          padding-top: 0;
+
+          .list-params {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 10px;
+          }
+
+          > .btn {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 900px) {
@@ -98,21 +148,97 @@
       display: block;
     }
   }
+
+  .section-we-numbers {
+    .grid-numbers {
+      margin-top: 40px;
+      .item {
+        .title {
+          font-size: 16px;
+          .number {
+            font-size: 42px;
+          }
+        }
+        .desc {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .owl-dots {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 800px) {
   .btn {
     font-size: 13px;
   }
+  .text-md {
+    font-size: 14px;
+  }
   .section-intro {
+    background-image: none;
     .index-title {
       font-size: 6vw;
     }
   }
+  .section-empty-photo {
+    .container-img {
+      height: 350px;
+    }
+  }
+
+  .section-we-numbers {
+    .top-head {
+      grid-gap: 20px;
+      .left-col {
+        .heading {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  .block-signature {
+    .title {
+      font-size: 22px;
+    }
+  }
+
+  .slider-control {
+    margin-left: 20px;
+    .btn {
+      width: 36px;
+      height: 36px;
+
+      i {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .hr-line {
+    width: 80px;
+    margin-top: 20px;
+  }
+
+  .top-header {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 700px) {
-
+  .section-we-numbers {
+    .grid-numbers {
+      grid-template-columns: 1fr;
+      grid-column-gap: 15px;
+      .item {
+        padding: 25px 20px;
+      }
+    }
+  }
 }
 
 @media (max-width: 600px) {
@@ -121,6 +247,34 @@
   }
   .section-intro {
     .index-title {
+    }
+  }
+
+  .section-current-projects {
+    .slider-projects {
+      .item-project {
+        grid-gap: 20px;
+        padding: 3px;
+        .info-container {
+          padding: 10px;
+          .title-project {
+            font-size: 22px;
+          }
+          .list-params {
+            grid-template-columns: 1fr;
+
+            .item {
+              margin-bottom: 20px;
+              .title {
+                font-size: 14px;
+              }
+              .desc {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

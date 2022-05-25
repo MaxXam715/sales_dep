@@ -23,3 +23,18 @@
     mask-image: url(menu.svg);
     -webkit-mask-image: url(menu.svg);
 }
+
+.icon.arrow-left {
+    mask-image: url(arrow-left.svg);
+    -webkit-mask-image: url(arrow-left.svg);
+}
+
+.icon.arrow-right {
+    mask-image: url(arrow-right.svg);
+    -webkit-mask-image: url(arrow-right.svg);
+}
+
+.icon.close {
+    mask-image: url(close.svg);
+    -webkit-mask-image: url(close.svg);
+}

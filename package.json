@@ -1,5 +1,5 @@
 {
-  "name": "gexcom",
+  "name": "sales",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,16 +7,8 @@
     "build": "gulp build",
     "deploy": "gulp deploy"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://gitlab.com/martiniden/gexcom.git"
-  },
-  "author": "Formula",
+  "author": "Maxim",
   "license": "ISC",
-  "bugs": {
-    "url": "https://gitlab.com/martiniden/gexcom/issues"
-  },
-  "homepage": "https://gitlab.com/martiniden/gexcom#readme",
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
