@@ -14,7 +14,8 @@
   }
 }
 @media (max-width: 1500px) {
-  .container-xl {
+  .container-xl,
+.container-lg {
     max-width: calc(var(--container-xl) + 100px);
     padding-left: 50px;
     padding-right: 50px;
@@ -74,9 +75,14 @@
   .section-current-projects .slider-projects .item-project .info-container > .btn {
     margin: 0 auto;
   }
+
+  .section-partners .partner-slider .item img {
+    padding: 20px;
+  }
 }
 @media (max-width: 900px) {
-  .container-xl {
+  .container-xl,
+.container-lg {
     max-width: calc(var(--container-xl) + 40px);
     padding-left: 20px;
     padding-right: 20px;
@@ -169,6 +175,10 @@
   .top-header {
     margin-bottom: 30px;
   }
+
+  .section-capture-point .info-block .title {
+    font-size: 26px;
+  }
 }
 @media (max-width: 700px) {
   .section-we-numbers .grid-numbers {
@@ -177,6 +187,38 @@
   }
   .section-we-numbers .grid-numbers .item {
     padding: 25px 20px;
+  }
+
+  .our-merits .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .our-merits .grid-container .item .title-article {
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .section-our-team .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .section-our-team .grid-container .team-member .info-block .name {
+    font-size: 18px;
+  }
+  .section-our-team .btn-callback {
+    margin-top: 40px;
+  }
+
+  .section-faq .grid-container .item-faq {
+    padding: 20px 20px 20px 30px;
+  }
+  .section-faq .grid-container .item-faq .number {
+    display: none;
+  }
+  .section-faq .grid-container .item-faq .question .title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .section-faq .btn {
+    margin-top: 40px;
   }
 }
 @media (max-width: 600px) {

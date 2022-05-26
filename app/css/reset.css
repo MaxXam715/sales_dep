@@ -9,7 +9,7 @@ html {
 *::before,
 *::after {
     box-sizing: border-box;
-    outline: none;
+    outline: none !important;
 }
 
 /* Убираем внутренние отступы */

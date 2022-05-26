@@ -38,3 +38,13 @@
     mask-image: url(close.svg);
     -webkit-mask-image: url(close.svg);
 }
+
+.icon.plus {
+    mask-image: url(plus.svg);
+    -webkit-mask-image: url(plus.svg);
+}
+
+.icon.minus {
+    mask-image: url(minus.svg);
+    -webkit-mask-image: url(minus.svg);
+}
