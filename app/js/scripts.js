@@ -194,6 +194,33 @@ $(document).ready(function () {
     });
 
 
+    // вызов модального окна --= АКЦИИ ---
+    $(document).on('click', '.promotion-button', function () {
+        var html = `
+        <div class="modal-window">
+            <div class="modal-container" style="width: 1000px">
+        
+                <div class="head">
+                    <h2 class="title">Квартира с видом на море - СКИДКА ДО 20%!</h2>
+                    <p class="desc text-md">Заполните форму и получите выгодное решение</p>
+                    <button type="button" class="btn btn-close-modal"><i class="icon close"></i></button>
+                </div>
+        
+                <div class="body-container">
+                123123
+                </div>
+        
+                <div class="footer">
+                    <button type="button" class="btn btn-primary send-form">Оставить заявку</button>
+                </div>
+        
+            </div>
+        </div>`;
+        $('body').append(html);
+        openModalCallBack();
+    });
+
+
 
     // *** По таймеру ***
     $(function () {
