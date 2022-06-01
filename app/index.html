@@ -17,15 +17,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/css/uikit.min.css">
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit.min.js"></script>
     <!-- CSS Reset -->
-    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/reset.css?v=1.0.13">
     <!-- Font: Gilroy -->
-    <link rel="stylesheet" href="/fonts/SFUIDisplay/stylesheet.css">
+    <link rel="stylesheet" href="/fonts/SFUIDisplay/stylesheet.css?v=1.0.13">
     <!-- Icons Custom -->
-    <link rel="stylesheet" href="/icons/icons.css">
+    <link rel="stylesheet" href="/icons/icons.css?v=1.0.13">
     <!-- CSS Style -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css?v=1.0.13">
     <!-- Css Media -->
-    <link rel="stylesheet" href="/css/media.css">
+    <link rel="stylesheet" href="/css/media.css?v=1.0.13">
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="/plugins/OwlCarousel2/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="/plugins/OwlCarousel2/assets/owl.theme.default.min.css">
@@ -37,11 +37,11 @@
     <div class="container-xl">
         <a href="/"><img src="/img/logo.svg" alt="logo" class="logo"></a>
         <nav class="navigation">
-            <a href="#" class="item-link">Каталог объектов</a>
-            <a href="#" class="item-link">Блог</a>
-            <a href="#" class="item-link">Команда</a>
-            <a href="#" class="item-link">FAQ</a>
-            <a href="#" class="item-link">Контакты</a>
+            <a href="#catalog-object" class="item-link">Каталог объектов</a>
+            <a href="#advantages" class="item-link">Преимущества</a>
+            <a href="#team" class="item-link">Команда</a>
+            <a href="#faq" class="item-link">FAQ</a>
+            <a href="#contact" class="item-link">Контакты</a>
         </nav>
         <div class="callback flex flex-v-center">
             <a href="tel:+7 (495) 659-99-88" class="phone-number flex flex-v-center"><i class="icon phone"></i>+7 (495) 659-99-88</a>
@@ -57,7 +57,13 @@
     <div class="container-xl">
         <h1 class="index-title">Искусство обращения с недвижимостью</h1>
         <p class="desc text-md">Недвижимость – это то, чем мы живём и то, что заставляет нас двигаться вперёд. Отвечаем за результат с 2015 года</p>
-        <button type="button" class="btn btn-primary">Получить планировки и цены</button>
+
+        <form>
+            <label>
+                <input type="text" placeholder="+7 (___) ___-__-__" inputmode="numeric" class="mask-phone valid-phone field-border" signature="Телефон">
+            </label>
+            <button type="button" class="btn btn-primary send-form">Получить планировки и цены</button>
+        </form>
     </div>
 </section>
 
@@ -103,7 +109,7 @@
 
 
 <!-- Актуальные проекты -->
-<section class="section-current-projects">
+<section class="section-current-projects" id="catalog-object">
     <div class="container-xl">
         <div class="top-header flex flex-g-sp">
             <div class="block-signature">
@@ -171,7 +177,7 @@
 </section>
 
 <!-- Наши заслуги -->
-<section class="our-merits section-color">
+<section class="our-merits section-color" id="advantages">
     <div class="container-xl">
         <div class="top-header">
             <div class="block-signature">
@@ -255,9 +261,9 @@
         </div>
         <form>
             <label>
-                <input type="text" placeholder="+7 (___) ___ - __ - __">
+                <input type="text" placeholder="+7 (___) ___-__-__" inputmode="numeric" class="mask-phone valid-phone" signature="Телефон">
             </label>
-            <button type="button" class="btn btn-primary">Оставить заявку</button>
+            <button type="button" class="btn btn-primary send-form">Оставить заявку</button>
         </form>
     </div>
 </section>
@@ -288,7 +294,7 @@
 
 
 <!-- Часть команды - часть корабля -->
-<section class="section-our-team section-color">
+<section class="section-our-team section-color" id="team">
     <div class="container-xl">
         <div class="top-header flex flex-g-sp">
             <div class="block-signature">
@@ -347,7 +353,7 @@
             </div>
 
         </div>
-        <button type="button" class="btn btn-primary btn-callback">Выбрать эксперта</button>
+        <button type="button" class="btn btn-primary btn-callback select-user">Выбрать эксперта</button>
     </div>
 </section>
 
@@ -377,7 +383,6 @@
                     </div>
                 </div>
                 <p class="desc-reviews text-md">Долго собирался с мыслями, боялся ввязываться в ипотеку, но после общения со Светланой решился. Для меня это сложно, тк никогда не покупал квартиру, не брал кредитов. Но Светлана придала мне уверенности, объяснив, что платить за съёмную квартиру тоже самое, зато своя квартира, со своим ремонтом.</p>
-                <button type="button" class="btn btn-primary-small toggle-text">Подробнее</button>
             </div>
 
             <!-- отзыв -->
@@ -390,7 +395,6 @@
                     </div>
                 </div>
                 <p class="desc-reviews text-md">Долго собирался с мыслями, боялся ввязываться в ипотеку, но после общения со Светланой решился. Для меня это сложно, тк никогда не покупал квартиру, не брал кредитов. Но Светлана придала мне уверенности, объяснив, что платить за съёмную квартиру тоже самое, зато своя квартира, со своим ремонтом.</p>
-                <button type="button" class="btn btn-primary-small toggle-text">Подробнее</button>
             </div>
 
             <!-- отзыв -->
@@ -403,7 +407,6 @@
                     </div>
                 </div>
                 <p class="desc-reviews text-md">Долго собирался с мыслями, боялся ввязываться в ипотеку, но после общения со Светланой решился. Для меня это сложно, тк никогда не покупал квартиру, не брал кредитов. Но Светлана придала мне уверенности, объяснив, что платить за съёмную квартиру тоже самое, зато своя квартира, со своим ремонтом.</p>
-                <button type="button" class="btn btn-primary-small toggle-text">Подробнее</button>
             </div>
 
         </div>
@@ -412,7 +415,7 @@
 
 
 <!-- Вопрос - ответ -->
-<section class="section-faq section-color">
+<section class="section-faq section-color" id="faq">
     <div class="container-lg">
         <div class="top-header flex flex-g-sp">
             <div class="block-signature">
@@ -474,13 +477,82 @@
 
         </div>
 
-        <button type="button" class="btn btn-primary">Задать свой вопрос</button>
+        <button type="button" class="btn btn-primary btn-callback">Задать свой вопрос</button>
     </div>
 </section>
 
 
+<!-- контакты --->
+<section class="section-contacts" id="contact">
+    <div class="container-xl">
+        <div class="container-grid">
+            <div class="left-col">
+                <div class="top-header flex flex-g-sp">
+                    <div class="block-signature">
+                        <p class="title">Контакты</p>
+                        <div class="hr-line"></div>
+                    </div>
+                </div>
+
+                <div class="block-contacts">
+                    <a href="tel:+7(495)659-99-88" class="phone">+7 (495) 659-99-88</a>
+                    <address class="address text-md">г. Сочи,<br>ул. Конституции СССР 4, 2 этаж, офис 224</address>
+                    <button type="button" class="btn btn-primary btn-callback">Обратный звонок</button>
+                    <div class="social-network">
+                        <a href="#"><i class="icon whatsapp"></i></a>
+                        <a href="#"><i class="icon phone"></i></a>
+                        <a href="#"><i class="icon mail"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="right-col">
+                <div class="container-map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7d3a6c922dd9120d602b46c15886c90ab8e285724e2487883117a19fd416c28a&amp;source=constructor" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- footer --->
+<section class="section-footer">
+    <div class="container-xl">
+        <footer>
+            <div class="left-col">
+                <a href="javascript:void(0)"><img src="/img/logo-white.svg" alt="logo"></a>
+            </div>
+            <div class="right-col">
+                <nav class="navigation">
+                    <a href="#catalog-object" class="item-link">Каталог объектов</a>
+                    <a href="#advantages" class="item-link">Преимущества</a>
+                    <a href="#team" class="item-link">Команда</a>
+                    <a href="#faq" class="item-link">FAQ</a>
+                    <a href="#contact" class="item-link">Контакты</a>
+                </nav>
+            </div>
+        </footer>
+    </div>
+</section>
+
+
+
+<!-- плавающая кнопка контактов --->
+<div class="floating-button">
+    <div class="container">
+        <nav>
+            <a href="tel:+7(495)659-99-88" style="background-color: #c335f1" class="hidden-pc" uk-tooltip="pos: left; title: Позвонить"><i class="icon phone" style="background-color: #fff;"></i></a>
+            <a href="whatsapp://send?phone=79005554455" target="_blank" style="background-color: #5ACF68" class="hidden-pc" uk-tooltip="pos: left; title: WhatsApp"><i class="icon whatsapp" style="background-color: #fff;"></i></a>
+            <a href="https://t.me/+79999999999" target="_blank" style="background-color: #35ACF1" uk-tooltip="pos: left; title: Telegram"><i class="icon telegram" style="background-color: #fff; margin-left: -5px;"></i></a>
+        </nav>
+        <button type="button" class="btn btn-toggle"><i class="icon phone"></i></button>
+    </div>
+</div>
+
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="/js/scripts.js"></script>
+<script src="/js/scripts.js?v=1.0.13"></script>
 <script src="/plugins/OwlCarousel2/owl.carousel.min.js"></script>
+<script src="/plugins/jquery.maskedinput.min.js"></script>
 </body>
 </html>

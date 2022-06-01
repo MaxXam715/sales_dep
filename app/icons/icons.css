@@ -48,3 +48,18 @@
     mask-image: url(minus.svg);
     -webkit-mask-image: url(minus.svg);
 }
+
+.icon.mail {
+    mask-image: url(mail.svg);
+    -webkit-mask-image: url(mail.svg);
+}
+
+.icon.whatsapp {
+    mask-image: url(whatsapp.svg);
+    -webkit-mask-image: url(whatsapp.svg);
+}
+
+.icon.telegram {
+    mask-image: url(telegram.svg);
+    -webkit-mask-image: url(telegram.svg);
+}
