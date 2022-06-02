@@ -810,6 +810,7 @@ label textarea {
   background: linear-gradient(90deg, #1F202E 0%, #3D3F56 100%);
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
   border-radius: 30px 15px 15px 5px;
+  cursor: pointer;
 }
 .promotion-button .grid-container {
   position: relative;
@@ -950,4 +951,95 @@ label textarea {
 }
 .modal-window.modal-success .modal-container {
   width: 450px;
+}
+
+.promotion-object .top-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+.promotion-object .top-col .photo {
+  width: 100%;
+  height: 320px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.promotion-object .top-col .price .new-price .title {
+  font-size: 21px;
+  color: #000000;
+}
+.promotion-object .top-col .price .new-price .cost {
+  font-size: 40px;
+  font-weight: 600;
+  color: #000;
+}
+.promotion-object .top-col .price .old-price .title {
+  font-size: 14px;
+  color: #767676;
+}
+.promotion-object .top-col .price .old-price .cost {
+  font-size: 20px;
+  color: #767676;
+  text-decoration-line: line-through;
+}
+.promotion-object .top-col form {
+  background-color: var(--index-lite);
+  padding: 30px;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+.promotion-object .top-col form label {
+  margin-bottom: 10px !important;
+}
+.promotion-object .top-col form button {
+  width: 100%;
+}
+.promotion-object .btm-col .name-object {
+  font-size: 21px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.promotion-object .btm-col .desc-object {
+  font-size: 15px;
+  line-height: 20px;
+  color: #454545;
+  margin-top: 20px;
+}
+.promotion-object .btm-col .advantages-block {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.promotion-object .btm-col .advantages-block .title {
+  font-size: 21px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+}
+.promotion-object .btm-col .advantages-block .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 10px;
+  margin-top: 30px;
+}
+.promotion-object .btm-col .advantages-block .grid-container .item {
+  display: flex;
+  align-items: center;
+}
+.promotion-object .btm-col .advantages-block .grid-container .item span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background: #4FA930;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+.promotion-object .btm-col .advantages-block .grid-container .item span i {
+  background-color: #fff;
+}
+
+.hidden-pc {
+  display: none !important;
 }

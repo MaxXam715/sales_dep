@@ -2,7 +2,9 @@ $(document).ready(function () {
     var modalTarget = '';
 
 
-    $('.mask-phone').mask('+7 (999) 999-99-99')
+    $(document).on('focus', '.mask-phone', function () {
+        $(this).mask('+7 (999) 999-99-99')
+    })
 
     // открыть моб. меню
     $('.header .btn-toggle-menu').click(function () {
@@ -206,25 +208,65 @@ $(document).ready(function () {
                     <button type="button" class="btn btn-close-modal"><i class="icon close"></i></button>
                 </div>
         
-                <div class="body-container">
-                123123
+                <div class="body-container promotion-object">
+                    <div class="top-col">
+                        <img src="/img/project-2.png" alt="photo" class="photo">
+                        <div class="price">
+                            <div class="new-price">
+                                <p class="title">Новая цена</p>
+                                <p class="cost">75 000 000 руб.</p>
+                            </div>
+                            <div class="old-price">
+                                <p class="title">Старая цена</p>
+                                <p class="cost">78 550 000 руб.</p>
+                            </div>
+                            <form>
+                                <label>
+                                    <span class="title">Номер телефона</span>
+                                    <input type="text" placeholder="+7 (___) ___-__-__" class="mask-phone valid-check" signature="Имя">
+                                </label>
+                                <button type="button" class="btn btn-primary send-form">Оставить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="btm-col">
+                        <p class="name-object">3-х комнатная квартира в центре Сочи</p>
+                        <p class="address-object text-md">г. Сочи, ул. Кубанская, д. 12 б</p>
+                        <p class="desc-object">Дизайн квартиры выполнен в стиле легкая классика в светлых тонах. Пилястры. Обои исполнены в виде картин. Многоуровневый потолок с подсветкой. Двери с магнитными замками. Покрытие пола: плитка, паркет. Ремонт реализован из материалов высокого качества. Кухонная техника SМEG. Вся мебель и техника на фото остается новым хозяевам. Из окон открывается вид на море и город. Планировка: 1 спальня + гардероб, кабинет (планируется во 2ю спальню), кухня, зал, 2 сан.узла, просторный коридор, балкон.</p>
+                        
+                        <div class="advantages-block">
+                            <p class="title">Преимущества</p>
+                            <div class="grid-container">
+                                <p class="item"><span><i class="icon check"></i></span>Центр города</p>
+                                <p class="item"><span><i class="icon check"></i></span>До моря 800 метров</p>
+                                <p class="item"><span><i class="icon check"></i></span>Транспортная доступность в любую точку города</p>
+                                <p class="item"><span><i class="icon check"></i></span>Выезд на Курортный проспект в 300 метрах</p>
+                                <p class="item"><span><i class="icon check"></i></span>Парки и скверы, а также магазины, школы и детские сады в шаговой доступности</p>
+                                <p class="item"><span><i class="icon check"></i></span>Выезд на Курортный проспект в 300 метрах</p>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
         
                 <div class="footer">
-                    <button type="button" class="btn btn-primary send-form">Оставить заявку</button>
+                    <button type="button" class="btn btn-primary close-modal" style="margin-left: auto">Закрыть</button>
                 </div>
         
             </div>
         </div>`;
         $('body').append(html);
         openModalCallBack();
+
+        $('.close-modal').click(function () {
+            closeModalCallBack();
+        })
     });
 
 
 
     // *** По таймеру ***
     $(function () {
-        modalTarget = 'timer'
         var html = `
         <div class="modal-window">
             <div class="modal-container">
@@ -270,6 +312,7 @@ $(document).ready(function () {
 
         setTimeout(function () {
             if ( $('.modal-window').length == 0 ) {
+                modalTarget = 'timer'
                 $('body').append(html);
                 openModalCallBack();
             }
@@ -345,10 +388,10 @@ $(document).ready(function () {
             console.log('Готово к отправке');
             closeModalCallBack();
             setTimeout(function () {
-                if ( modalTarget != 'timer' ) {
-                    successModal();
-                } else if (modalTarget == 'timer') {
+                if (modalTarget == 'timer') {
                     successModalTimer();
+                } else {
+                    successModal();
                 }
 
             }, 500)
@@ -399,7 +442,6 @@ function openModalCallBack() {
         $('.modal-window').addClass('open');
         $('body').addClass('overLock');
     }, 0);
-    $('.mask-phone').mask('+7 (999) 999-99-99')
 }
 
 // закрыть модальное окно

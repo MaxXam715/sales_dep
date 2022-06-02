@@ -139,6 +139,13 @@
     justify-content: center;
     grid-gap: 20px;
   }
+
+  .promotion-object .top-col {
+    grid-template-columns: 1fr;
+  }
+  .promotion-object .btm-col .advantages-block .grid-container {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 800px) {
   .btn {
@@ -193,6 +200,10 @@
 
   .section-capture-point .info-block .title {
     font-size: 26px;
+  }
+
+  .promotion-button {
+    display: none !important;
   }
 }
 @media (max-width: 700px) {
@@ -317,5 +328,9 @@
 
   .floating-button .container nav a.hidden-pc {
     display: flex;
+  }
+
+  .hidden-pc {
+    display: inherit !important;
   }
 }

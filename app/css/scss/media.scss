@@ -201,6 +201,19 @@
       }
     }
   }
+
+  .promotion-object {
+    .top-col {
+      grid-template-columns: 1fr;
+    }
+    .btm-col {
+      .advantages-block {
+        .grid-container {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 800px) {
@@ -266,6 +279,10 @@
         font-size: 26px;
       }
     }
+  }
+
+  .promotion-button {
+    display: none !important;
   }
 }
 
@@ -439,6 +456,10 @@
         }
       }
     }
+  }
+
+  .hidden-pc {
+    display: inherit !important;
   }
 }
 

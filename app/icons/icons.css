@@ -63,3 +63,8 @@
     mask-image: url(telegram.svg);
     -webkit-mask-image: url(telegram.svg);
 }
+
+.icon.check {
+    mask-image: url(check.svg);
+    -webkit-mask-image: url(check.svg);
+}
